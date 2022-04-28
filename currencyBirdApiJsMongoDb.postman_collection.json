@@ -1,0 +1,165 @@
+{
+	"info": {
+		"_postman_id": "6812fb6b-b712-4a8c-befa-c659234e8ded",
+		"name": "currencyBirdApiJsMongoDb",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getAllSubscribersRecords",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "getSingleSubscribersRecord",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "CreateSubscribersRecord",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Alicia Rubio Salinas\",\r\n    \"email\": \"alirubsal@gmail.com\",\r\n    \"address\": \"Manuel Montt 831\",\r\n    \"gender\": \"Hombre\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/subscription",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"subscription"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "registerLinkToSubscriber",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Alicia Rubio Salinas\",\r\n    \"email\": \"alirubsal@gmail.com\",\r\n    \"address\": \"Manuel Montt 831\",\r\n    \"gender\": \"Hombre\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/subscription",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"subscription"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "subscriberPartnerService",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Alicia Rubio Salinas\",\r\n    \"email\": \"alirubsal@gmail.com\",\r\n    \"address\": \"Manuel Montt 831\",\r\n    \"gender\": \"Hombre\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/subscription",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"subscription"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateSubscribersRecord",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Alicia Rubio Salinas\",\r\n    \"email\": \"alirubsal@gmail.com\",\r\n    \"address\": \"Manuel Montt 831\",\r\n    \"gender\": \"Hombre\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/subscription/6266c6e1fddc9c0d60cc3f61",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"subscription",
+						"6266c6e1fddc9c0d60cc3f61"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteSingleSubscribersRecord",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/subscription/6266d08bf96f910e1c3e780c",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"subscription",
+						"6266d08bf96f910e1c3e780c"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
