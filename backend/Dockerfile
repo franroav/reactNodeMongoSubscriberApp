@@ -1,10 +1,11 @@
 FROM node:alpine
-
-RUN mkdir -p /usr/src/app
-
 # Create app directory
-WORKDIR /usr/src/app
+RUN mkdir -p /backend
 
+# RUN mkdir -p /usr/src/app
+
+# WORKDIR /usr/src/app
+WORKDIR /backend
 #Install app dependencies
 COPY package*.json ./
 

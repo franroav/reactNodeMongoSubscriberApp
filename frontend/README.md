@@ -1,6 +1,6 @@
 ## Clone repository
 
-Open your terminal and go to the folder where you want to download to project. Then write in the console `git clone https://github.com/franroav/reactagilesoft.git`.
+Open your terminal and go to the folder where you want to download to project on branch develop . Then write in the console `git clone --branch develop https://github.com/franroav/reactNodeMongoSubscriberApp` and then cd into frontend folder.
 
 ## install dependencies
 
