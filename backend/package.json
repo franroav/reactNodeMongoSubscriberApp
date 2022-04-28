@@ -1,0 +1,36 @@
+{
+  "name": "currencybird-subscription-backend",
+  "version": "1.0.0",
+  "description": "CurrencyBird quiere realizar una nueva campaña, en donde los clientes que ya están registrados puedan invitar a sus amigos a registrarse. Si el invitado se registra, ambos reciben $5000 CLP para su próxima transferencia.",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha --timeout 100000",
+    "start": "nodemon app.js"
+  },
+  "author": "Francisco Javier Roa Valenzuela",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.26.1",
+    "cors": "^2.8.5",
+    "csv-parser": "^3.0.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.2.1",
+    "express-validator": "^6.14.0",
+    "helmet": "^5.0.2",
+    "mocha-sonarqube-reporter": "^1.0.2",
+    "moment": "^2.29.2",
+    "mongoose": "^5.11.15",
+    "nock": "^13.2.4",
+    "node-cron": "^2.0.3",
+    "node-csv": "^0.1.2",
+    "sonarqube-scanner": "^2.8.1",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "chai": "^4.3.0",
+    "chai-http": "^4.3.0",
+    "mocha": "^8.3.0",
+    "nodemon": "^2.0.7"
+  }
+}

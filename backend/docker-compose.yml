@@ -1,0 +1,43 @@
+version: '3.7'
+
+services:
+  db-mongo:
+  # MongoDB database
+    container_name: db-mongo
+    image: mongo
+    env_file:
+      - .env
+    ports: 
+      - "27018:27017"
+    volumes: 
+      - mongodbdata:/data/db
+      - ./seed/seed.js:/docker-entrypoint-initdb.d/seed.js:ro
+    logging:
+      driver: none
+  mongo-seed_data: 
+  # Seed Resources
+    container_name: mongo-seed-data-db
+    build: ./seed
+    env_file:
+      - .env
+    links:
+      - db-mongo
+    depends_on:
+      - db-mongo
+    logging:
+      driver: none
+  api-rest:
+    container_name: subscriber-api
+    restart: always
+    build: .
+    ports:
+      - "3700:5000"
+    links:
+      - db-mongo
+    volumes:
+      - .:/usr/src/app
+volumes:
+  mongodbdata:
+    driver: local
+
+
