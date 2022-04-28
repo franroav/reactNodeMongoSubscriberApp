@@ -292,9 +292,9 @@ describe("PUT /api/subscription/:id", () => {
   it("It should UPDATE a Subscription", (done) => {
     const _id = "6266c6e1fddc9c0d60cc3f61";
     const sub = {
-      name: "Alicia Rubio Salinas",
+      name: "Francisco Roa V.",
       email: "franroav@gmail.com",
-      address: "Manuel Montt 8312",
+      address: "Manuel Montt 8316",
     };
     chai
       .request(testPath)
@@ -316,7 +316,7 @@ describe("PUT /api/subscription/:id", () => {
 
 describe("DELETE /api/subscription/:id", () => {
   it("It should DELETE a Subscription", (done) => {
-    const _id = "6269f9afd6a2dc2c48482f1f";
+    const _id = "6269d332eb1e35132019437e";
     chai
       .request(testPath)
       .delete("/api/shop/" + shop)
