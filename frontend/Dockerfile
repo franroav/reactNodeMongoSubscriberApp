@@ -1,7 +1,11 @@
 FROM node:alpine
-WORKDIR /app
-COPY package.json ./
-COPY package-lock.json ./
+RUN mkdir -p /frontend
+WORKDIR /frontend
 COPY ./ ./
-RUN npm i
+RUN rm package-lock.json
+RUN npm install
+RUN npm install --only=dev
+RUN npm run build
+
+EXPOSE 3000
 CMD ["npm", "run", "start:dev"]
